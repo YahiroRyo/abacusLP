@@ -5,3 +5,17 @@
 @import url("http://fonts.googleapis.com/earlyaccess/notosansjapanese.css");
 
 body { font-family: Ubuntu, 'Noto Sans JP', 'Helvetica', 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', '游ゴシック体','Yu Gothic', YuGothic; }
+.header {
+  background-color: $brand-primary;
+  height: 50px;
+}
+.icon {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 2.5;
+}
+.icon_logo {
+  display: block;
+  width: 55px;
+}
+.icon_title { color: white; }
