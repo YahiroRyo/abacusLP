@@ -18,3 +18,12 @@
     color: darken($brand-sub-accent, 30%);
   }
 }
+.btn_recommend {
+  background-color: lighten(red, 25%);
+  box-shadow: 2px 2px lighten(red, 30%);
+  &:hover {
+    border: 2px solid lighten(red, 25%);
+    box-shadow: 2px 2px lighten(red, 5%);
+    color: red;
+  }
+}
