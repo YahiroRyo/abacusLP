@@ -1,1 +1,28 @@
 @import "../base";
+
+.mv-section {}
+.mv-contents {
+  background-image: url('../../images/mv_img.jpg');
+  background-size: cover;
+  height: 75vh;
+  &:after {
+    background: radial-gradient(circle farthest-side, rgba(black, 0.3), rgba(black, 0.3), transparent 50%, transparent);
+    background-size: 10px 10px;
+    content: '';
+    display: inline-block;
+    height: 75vh;
+    width: 100vw;
+  }
+}
+.mv-section__catch {
+  background-color: rgba(black, 0.2);
+  color: white;
+  font-size: 65px;
+  font-weight: 900;
+  position: absolute;
+  padding: 50px;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+.first-read-block {}
