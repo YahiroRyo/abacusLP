@@ -4,13 +4,20 @@
 
 $header-font-size: 30px;
 
-body { font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif; }
+body {
+  font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 .header {
   background-color: rgba(255, 255, 255, 0.7);
   font-size: 30px;
-  position: fixed;
+  position: sticky;
+  top: 0;
+  left: 0;
   line-height: 3;
   width: 100%;
+  z-index: 1;
 }
 
 /* アイコン・ロゴ */
