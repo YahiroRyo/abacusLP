@@ -1,6 +1,6 @@
 @import "../base";
 
-.mv-section {}
+/* メインヴィジュアル */
 .mv-contents {
   background-image: url('../../images/mv_img.jpg');
   background-size: cover;
@@ -25,6 +25,8 @@
   transform: translate(-50%, -50%);
   left: 50%;
 }
+
+/* 悩み */
 .question-worry { margin-top: 100px; }
 .question-worry__title {
   font-size: 42px;
@@ -76,4 +78,45 @@
   font-size: 18px;
   text-align: center;
   margin-top: 20px;
+}
+
+/* メリット */
+.merit-section__body {
+  background-color: #5373aa;
+  margin-top: 50px;
+  padding: 75px;
+}
+.merit-section__body__title {
+  @extend .question-worry__title;
+  color: white;
+}
+.merit-section__body__explain {
+  @extend .question-worry__body__item__explain;
+  margin-top: 55px;
+  font-size: 18px;
+  text-align: left;
+  line-height: 1.7;
+}
+
+/* メール */
+.mail-section {
+  background-color: #eee;
+  position: relative;
+  margin-top: 50px;
+  height: 200px;
+}
+.mail-section__body__title {
+  @extend .question-worry__title;
+  padding-top: 30px;
+  font-size: 30px;
+}
+.mail-section__body__btn {
+  @extend .btn;
+  @extend .btn_recommend;
+  @extend .width-middle;
+  line-height: 40px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
