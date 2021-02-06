@@ -5,4 +5,10 @@
 .width-full { width: 100%; }
 .flex { display: flex; }
 
+.inner {
+  width: 1024px;
+  margin: 0 auto;
+}
+
 .color-white { color: white; }
+.color-brand-primary { color: $brand-primary; }
