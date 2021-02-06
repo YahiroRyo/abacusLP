@@ -2,20 +2,24 @@
 @import "module/button";
 @import "cosmetic";
 
-@import url("http://fonts.googleapis.com/earlyaccess/notosansjapanese.css");
-
 $header-font-size: 30px;
 
-body { font-family: Ubuntu, 'Noto Sans JP', 'Helvetica', 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', '游ゴシック体','Yu Gothic', YuGothic; }
+body { font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif; }
 .header {
   background-color: rgba(255, 255, 255, 0.7);
   font-size: 30px;
+  position: fixed;
   line-height: 3;
+  width: 100%;
 }
-.icon { font-weight: bold; }
-.icon_flex { display: flex; }
-.icon__logo { width: $header-font-size * 3.5; }
 
+/* アイコン・ロゴ */
+.icon { font-weight: bold; }
+.icon__logo { width: $header-font-size * 4; }
+/* cosmetic */
+.icon_flex { display: flex; }
+
+/* ナビゲーション */
 .menus {
   margin-left: auto;
   position: relative;
@@ -24,8 +28,9 @@ body { font-family: Ubuntu, 'Noto Sans JP', 'Helvetica', 'Helvetica Neue', 'Hira
   display: block;
   text-align: center;
 }
+/* cosmetic */
 .menus__item_header {
-  line-height: $header-font-size * 1.5;
+  line-height: $header-font-size * 1.2;
   position: absolute;
   top: 50%;
   right: 0;
