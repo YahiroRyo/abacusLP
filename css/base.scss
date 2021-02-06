@@ -8,10 +8,26 @@ $header-font-size: 30px;
 
 body { font-family: Ubuntu, 'Noto Sans JP', 'Helvetica', 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', '游ゴシック体','Yu Gothic', YuGothic; }
 .header {
-  background-color: $brand-primary;
+  background-color: rgba(255, 255, 255, 0.7);
   font-size: 30px;
   line-height: 3;
 }
 .icon { font-weight: bold; }
 .icon_flex { display: flex; }
 .icon__logo { width: $header-font-size * 3.5; }
+
+.menus {
+  margin-left: auto;
+  position: relative;
+}
+.menus__item {
+  display: block;
+  text-align: center;
+}
+.menus__item_header {
+  line-height: $header-font-size * 1.5;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
