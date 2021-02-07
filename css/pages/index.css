@@ -461,6 +461,9 @@ template {
     display: block; }
 
   .color-white {
+    margin: 0 auto; }
+
+  .color-brand-primary {
     margin: 0 auto; } }
 body {
   font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
@@ -526,6 +529,9 @@ body {
     width: 90%; }
 
   .menus {
+    display: none; }
+
+  .icon__logo {
     display: none; } }
 /* メインヴィジュアル */
 .mv-contents {
