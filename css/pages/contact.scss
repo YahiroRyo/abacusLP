@@ -1,0 +1,22 @@
+@import "../base";
+
+.contact-section {
+  min-height: 800px;
+}
+.contact-section__title {
+  color: $brand-primary;
+  font-size: 50px;
+  font-weight: bold;
+  position: relative;
+  margin-top: 50px;
+  &::after {
+    background-color: $brand-primary;
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 5px;
+    width: 100%;
+  }
+}
+.contact-form { margin-top: 50px; }
