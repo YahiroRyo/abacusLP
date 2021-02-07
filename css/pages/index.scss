@@ -120,3 +120,58 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* 教室の特徴 */
+.features-section {
+  background-color: #eee;
+  margin-top: 50px;
+}
+.features-section__body__title {
+  @extend .question-worry__title;
+  padding-top: 50px;
+}
+.features-section__body__points { padding-top: 50px; }
+.features-section__body__points__item {
+  background-size: cover;
+  height: 300px;
+  width: 60%;
+  position: relative;
+  background-position: right 10% bottom 40%;
+  &.features-section__body__points__item_1 {
+    background-image: url('../../images/gotoclassroom.jpg');
+    margin-right: auto;
+  }
+  &.features-section__body__points__item_2 {
+    background-image: url('../../images/skill.jpg');
+    margin-left: auto;
+  }
+  &.features-section__body__points__item_3 {
+    background-image: url('../../images/money.jpg');
+    margin-right: auto;
+    background-position: right 10% bottom 90%;
+  }
+}
+.features-section__body__points__item__body {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #333;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 200px;
+  width: 40%;
+}
+.features-section__body__points__item__body__inner {
+  margin: 0 auto;
+  width: 90%;
+}
+.features-section__body__points__item__body__title {
+  @extend .question-worry__title;
+  font-size: 30px;
+  margin-top: 20px;
+  text-align: left;
+}
+.features-section__body__points__item__body__explain {
+  line-height: 1.5;
+  margin-top: 15px;
+}
