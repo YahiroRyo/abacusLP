@@ -1,7 +1,4 @@
 @charset "UTF-8";
-/*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
-/* Reset box-model and set borders */
-/* ============================================ */
 *,
 ::before,
 ::after {
@@ -465,6 +462,74 @@ template {
 
   .color-brand-primary {
     margin: 0 auto; } }
+.form__label {
+  color: #333;
+  display: block;
+  margin-top: 5px;
+  width: 100%; }
+
+.form__input, .form__textarea, .form__button {
+  border: 3px solid #ffc478;
+  border-radius: 5px;
+  padding: 3px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  width: 100%;
+  margin-right: auto; }
+
+.form__textarea {
+  min-height: 200px; }
+
+.form__button {
+  text-align: center;
+  line-height: 2;
+  width: 20%; }
+  .form__button:hover {
+    background-color: #eee; }
+
+@media (max-width: 1025px) {
+  .inner {
+    width: 700px; } }
+@media (max-width: 700px) {
+  .inner {
+    width: 90%; }
+
+  .menus {
+    display: none; }
+
+  .icon__logo {
+    display: none; } }
+.width-small {
+  width: 200px; }
+
+.width-middle, .mail-section__body__btn {
+  width: 400px; }
+
+.width-full {
+  width: 100%; }
+
+.flex {
+  display: flex; }
+
+.inner {
+  width: 1024px;
+  margin: 0 auto; }
+
+.color-white {
+  color: white; }
+
+.color-brand-primary {
+  color: #75cfb8; }
+
+@media (max-width: 700px) {
+  .flex {
+    display: block; }
+
+  .color-white {
+    margin: 0 auto; }
+
+  .color-brand-primary {
+    margin: 0 auto; } }
 body {
   font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
   overflow-x: hidden;
@@ -607,7 +672,7 @@ body {
   color: white;
   font-size: 18px;
   text-align: center;
-  margin-top: 20px; }
+  margin: 0 20px; }
 
 /* メリット */
 .merit-section__body {
